@@ -1,0 +1,121 @@
+apiVersion: image.openshift.io/v1
+generation: 1
+image:
+  dockerImageLayers:
+  - mediaType: application/vnd.docker.image.rootfs.diff.tar.gzip
+    name: sha256:6208c5a2e205726f3a2cd42a392c5e4f05256850d13197a711000c4021ede87b
+    size: 79073674
+  - mediaType: application/vnd.docker.image.rootfs.diff.tar.gzip
+    name: sha256:aa7a0ba1f2e8e5a14bb3844e52a516c2b1c3e712f3ce4a46c03ec1d49ad5a9f3
+    size: 29817103
+  dockerImageManifestMediaType: application/vnd.docker.distribution.manifest.v2+json
+  dockerImageMetadata:
+    Architecture: amd64
+    Config:
+      Entrypoint:
+      - nginx
+      Env:
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+      - container=oci
+      - OPENSHIFT_BUILD_NAME=simple-docker-build-basic-1
+      - OPENSHIFT_BUILD_NAMESPACE=default
+      Hostname: a0136bb56783
+      Labels:
+        architecture: x86_64
+        build-date: 2023-03-28T04:02:10
+        com.redhat.component: ubi8-container
+        com.redhat.license_terms: https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI
+        description: The Universal Base Image is designed and engineered to be the
+          base layer for all of your containerized applications, middleware and utilities.
+          This base image is freely redistributable, but Red Hat only supports Red
+          Hat technologies through subscriptions for Red Hat products. This image
+          is maintained by Red Hat and updated regularly.
+        distribution-scope: public
+        io.buildah.version: 1.26.4
+        io.k8s.description: The Universal Base Image is designed and engineered to
+          be the base layer for all of your containerized applications, middleware
+          and utilities. This base image is freely redistributable, but Red Hat only
+          supports Red Hat technologies through subscriptions for Red Hat products.
+          This image is maintained by Red Hat and updated regularly.
+        io.k8s.display-name: Red Hat Universal Base Image 8
+        io.openshift.build.name: simple-docker-build-basic-1
+        io.openshift.build.namespace: default
+        io.openshift.expose-services: ""
+        io.openshift.tags: base rhel8
+        maintainer: Red Hat, Inc.
+        name: ubi8
+        release: "1112"
+        summary: Provides the latest release of Red Hat Universal Base Image 8.
+        url: https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8/images/8.7-1112
+        vcs-ref: a995512a05037e3b60bbb1bf9fa6e394063131c3
+        vcs-type: git
+        vendor: Red Hat, Inc.
+        version: "8.7"
+    Container: 3a99bcd4c2499ac29dfd4670a0af9e70f4696e49764f1ec3fb27fa637e9c7dbb
+    ContainerConfig:
+      Entrypoint:
+      - nginx
+      Env:
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+      - container=oci
+      - OPENSHIFT_BUILD_NAME=simple-docker-build-basic-1
+      - OPENSHIFT_BUILD_NAMESPACE=default
+      Hostname: a0136bb56783
+      Labels:
+        architecture: x86_64
+        build-date: 2023-03-28T04:02:10
+        com.redhat.component: ubi8-container
+        com.redhat.license_terms: https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI
+        description: The Universal Base Image is designed and engineered to be the
+          base layer for all of your containerized applications, middleware and utilities.
+          This base image is freely redistributable, but Red Hat only supports Red
+          Hat technologies through subscriptions for Red Hat products. This image
+          is maintained by Red Hat and updated regularly.
+        distribution-scope: public
+        io.buildah.version: 1.26.4
+        io.k8s.description: The Universal Base Image is designed and engineered to
+          be the base layer for all of your containerized applications, middleware
+          and utilities. This base image is freely redistributable, but Red Hat only
+          supports Red Hat technologies through subscriptions for Red Hat products.
+          This image is maintained by Red Hat and updated regularly.
+        io.k8s.display-name: Red Hat Universal Base Image 8
+        io.openshift.build.name: simple-docker-build-basic-1
+        io.openshift.build.namespace: default
+        io.openshift.expose-services: ""
+        io.openshift.tags: base rhel8
+        maintainer: Red Hat, Inc.
+        name: ubi8
+        release: "1112"
+        summary: Provides the latest release of Red Hat Universal Base Image 8.
+        url: https://access.redhat.com/containers/#/registry.access.redhat.com/ubi8/images/8.7-1112
+        vcs-ref: a995512a05037e3b60bbb1bf9fa6e394063131c3
+        vcs-type: git
+        vendor: Red Hat, Inc.
+        version: "8.7"
+    Created: "2023-04-27T08:31:02Z"
+    Id: sha256:e4ce1fb2d9bad17b426fe24e51a7b2433a48565bb1ed0ad01d383f5c153c84b7
+    Parent: sha256:aecac3087aacc08ecdd4166270db6ff2d82f16e09f50a9cd7f33bba0eab1154f
+    Size: 108901161
+    apiVersion: image.openshift.io/1.0
+    kind: DockerImage
+  dockerImageMetadataVersion: "1.0"
+  dockerImageReference: image-registry.openshift-image-registry.svc:5000/default/simple-docker-build@sha256:dbd367bb4ee2d234d2615a69a3ff2f3d848a162949cd8182428f6a3e3750798d
+  metadata:
+    annotations:
+      image.openshift.io/dockerLayersOrder: ascending
+      image.openshift.io/manifestBlobStored: "true"
+      openshift.io/image.managed: "true"
+    creationTimestamp: "2023-04-27T08:31:06Z"
+    name: sha256:dbd367bb4ee2d234d2615a69a3ff2f3d848a162949cd8182428f6a3e3750798d
+    resourceVersion: "158850"
+    uid: f764e4c1-30e4-4a82-a7bd-91f6a76a4017
+kind: ImageStreamTag
+lookupPolicy:
+  local: false
+metadata:
+  creationTimestamp: "2023-04-27T08:31:06Z"
+  name: simple-docker-build:basic
+  namespace: default
+  resourceVersion: "158851"
+  uid: 9019b768-b56c-4c5c-8a5c-3e32e76454cc
+tag: null
